@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Yocto-Meteo-watcher",
+  "author": "Yoctopuce",
+  "version": "1.2",
+  "description": "A small web extension  tht will display the current weather on your browser using a Yocto-Meteo and a YoctoHub.",
+  "homepage_url": "https://www.yoctopuce.com",
+  "update_url": "https://www.yoctopuce.com/FR/interactive/web_extension/chrome/updates.xml",
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon_32.png",
+    "default_title": "Yocto-Meteo",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "configure.html"
+  },
+  "background": {
+    "scripts": [
+      "yoctolib/yocto_api.js",
+      "yoctolib/yocto_temperature.js",
+      "yoctolib/yocto_humidity.js",
+      "yoctolib/yocto_pressure.js",
+      "background-script.js"
+    ]
+  },
+  "permissions": [
+    "storage"
+  ]
+}
