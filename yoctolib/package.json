@@ -22,7 +22,7 @@
     "build": "node build.js build"
   },
   "dependencies": {
-    "ws": "^1.0.1"
+    "ws": "^6.2.1"
   },
   "devDependencies": {
     "semver": "^5.1.0"
